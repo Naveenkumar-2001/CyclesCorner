@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8e2730583a.js" crossorigin="anonymous"></script>
+    <title>Account || cyclinglover</title>
+    <style>
+@media only screen and (max-width:2600px) {
+    body{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    width: 100%;
+}
+li{
+    list-style-type: none;
+    display: inline;
+}
+li a{
+    text-decoration: none;
+}
+.phone0{
+    background-color:rgb(60, 60,60);
+    color: white;
+    height: 20px;
+    padding: 10px;
+    }
+    .phone1{
+        text-decoration: none;
+        color: white;
+        margin-left: 20px;
+    }
+    .phone2{
+        float: right;
+        text-decoration: none;
+        color: white;
+        margin-left: 20px;
+        display: block;
+        width: fit-content;
+    }
+    .phone1:hover,.phone2:hover{
+        color: orangered;
+    } 
+    .fa-solid{
+    color: white;
+    margin-right: 5px;
+    }
+     .nav1{
+       position: sticky;
+       top: -87px;
+    } 
+    .logo{
+        color: white;
+        font-size: 33px;
+        line-height: 60px;
+        font-weight: bold;
+        padding-left: 110px;
+        cursor: pointer;
+        }
+    .logo a{
+        text-decoration: none;
+        color: #fff;
+    }
+    #bar{
+        display: none;
+    } 
+    .nav{
+        top: 82px;
+        right: 0px;
+        height: 70px;
+        background: #000000c4;
+        box-shadow: 0 3px 15px rgba(0,0,0,.4);
+        position: absolute;
+        width: 100%;
+    }
+    .nav ul{
+        float: right;
+        margin-top: 0px;
+    } 
+    .nav ul li{
+        display: inline-block;
+        text-transform: uppercase;
+    }  
+    .nav ul li a{
+        color: white;
+        display: block;
+        padding: 0 15px;
+        line-height: 70px;
+        font-size: 20px;
+        transition: all .5s;
+        width: 100px;
+        text-align: center;
+    }
+    .nav ul li a:hover,
+    .nav ul li a.active{
+        color: #23dbdb;
+        background: black;
+        transition: 0.5s;
+}
+#check{
+    display: none;
+}
+/* .nav{
+    top: 100px;
+    height: 70px;
+    background: #000000c4;
+    box-shadow: 0 3px 15px rgba(0,0,0,.4);
+    position: absolute;
+    width: 100%;
+    z-index: 40;
+    }
+    .nav ul{
+    float: right;
+    margin-top: 0;
+    }
+    .nav ul li{
+    display: inline-block;
+    text-transform: uppercase;
+    }
+    .nav ul li a{
+    color: white;
+    display: block;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 20px;
+    transition: .5s;
+    width: 100px;
+    text-align: center;
+    }
+    .nav ul li a:hover,
+    .nav ul li a.active{
+    color: #23dbdb;
+    background: black;
+    transition: 0.5s;
+    } */
+.nav ul ul{
+    position: absolute;
+    top: 70px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 36;
+    padding-left: 0;
+    background-color: #000000f5;
+    }
+    .nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+    margin-left: -30px;
+    }
+    .nav ul ul li{
+    width: 200px;
+    display: list-item;
+    position: relative;
+    border-top: none;
+    text-align: center;
+    }
+    .nav ul ul li a{
+    width: 200px;
+    padding: 0;
+    line-height: 50px;
+    background: black;
+    text-transform:capitalize;
+    }
+    .nav ul ul ul{
+    border-top: none;
+    }
+    .nav ul ul li a i{
+    margin-left: 45px;
+    }        
+        /* body{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top:0px;
+}
+.phone{
+background-color:rgb(60, 60,60);
+color: white;
+height: 20px;
+padding: 10px;
+
+}
+.phone1{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+.phone2{
+    float: right;
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    display: block;
+    width: fit-content;
+}
+li{
+
+list-style-type: none;
+display: inline;
+}
+li a{
+text-decoration: none;
+color: white;
+}
+.fa-solid{
+color: white;
+margin-right: 5px;
+} */
+.img{
+    width: 100%;
+}
+.nav1{
+position: sticky;
+top: -87px;
+z-index: 36;
+}
+/* .nav .logo{
+color: white;
+font-size: 33px;
+font-weight: bold;
+line-height: 70px;
+padding-left: 110px;
+}
+.nav{
+top: 50px;
+height: 70px;
+background: #000000c4;
+box-shadow: 0 3px 15px rgba(0,0,0,.4);
+position: absolute;
+width: 100%;
+}
+.nav ul{
+float: right;
+margin-top: 0;
+}
+.nav ul li{
+display: inline-block;
+text-transform: uppercase;
+}
+.nav ul li a{
+color: white;
+display: block;
+padding: 0 15px;
+line-height: 70px;
+font-size: 20px;
+transition: .5s;
+width: 100px;
+text-align: center;
+}
+.nav ul li a:hover,
+.nav ul li a.active{
+color: #23dbdb;
+background: black;
+transition: 0.5s;
+}
+.nav ul ul{
+position: absolute;
+top: 70px;
+opacity: 0;
+visibility: hidden;
+z-index: 36;
+padding-left: 0;
+}
+.nav ul li:hover > ul{
+top: 70px;
+opacity: 1;
+visibility: visible;
+transition: .3s linear;
+margin-left: -30px;
+}
+.nav ul ul li{
+width: 200px;
+display: list-item;
+position: relative;
+border-top: none;
+}
+.nav ul ul li a{
+width: 200px;
+padding: 0;
+line-height: 50px;
+background: black;
+text-transform:capitalize;
+}
+.nav ul ul ul{
+border-top: none;
+}
+.nav ul ul li a i{
+margin-left: 45px;
+}
+.phone1:hover,.phone2:hover{
+    color: orangered;
+} */
+
+.accountpage{
+    border: 2px solid black;
+    padding: 10px;
+    float: left;
+    margin-left: 26%;
+    width: 400px;
+    position: absolute;
+
+}
+.act{
+    margin-left: 20px;
+}
+.act a{
+    text-decoration: none;
+    float: right;
+    margin-right: 20px;
+}
+.act a:hover{
+    color:orangered ;
+}
+.ln{
+    position: absolute;
+    right: 5px;
+    top:123px;
+    margin-bottom: 10px;
+}
+.ph{
+    position: absolute;
+    right: 5px;
+    top:200px; 
+}
+.accountpage input{
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.input{
+    width: 380px;
+}
+.button{
+    text-align: center;
+}
+button{
+    padding: 5px;
+    outline: none;
+    border: none;
+}
+button:hover{
+    background: gray;
+}
+.accountpage1{
+    border: 2px solid black;
+    padding: 10px;
+    margin-left: 54%; 
+    width: 400px;
+}
+.accountpage1 input{
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 380px;
+}
+.footer{
+margin-top: 10px;
+padding: 10px;
+text-align: center;
+background-color: rgb(60, 60,60);
+color: white;
+float: none;
+}
+}
+@media only screen and (max-width:1800px) {
+    .accountpage{
+        margin-left:21% ;
+    }
+    .accountpage1{
+        margin-left: 57%;
+    }
+}
+@media only screen and (max-width:1400px) {
+    .logo{
+        padding-left: 50px;
+    }
+    .accountpage{
+        margin-left:15% ;
+    }
+    .accountpage1{
+        margin-left: 57%;
+    }
+}
+@media only screen and (max-width:1197px){
+    .logo{
+        padding-left: 40px;
+        line-height: 60px;
+    }
+    .nav ul li a{
+        padding: 0 ;
+        font-size: 14px;
+        width: 77px;
+    }
+    .accountpage{
+        margin-left:4% ;
+    }
+    .accountpage1{
+        margin-left: 51%;
+    }
+} 
+@media only screen and (max-width:960px) {
+    .accountpage{
+        margin-left: 29%;
+    }
+    .accountpage1{
+        margin-top: 69%;
+        margin-left: 29%;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="phone0">
+        <li><a class="phone1" href="#"><i class="fa-solid fa-phone"></i>+916369363660</a></li>
+        <li><a class="phone1" href="#"><i class="fa-solid fa-envelope"></i>yarrairunthaonakuennada@gmail.com</a></li>
+        <li><a class="phone2" href=""><i class="fa-solid fa-user"></i>ACCOUNT</a></li>
+    </div>
+    <div class="nav1">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+         <i id="bar" class="fa-solid fa-bars"></i>
+        </label>
+        <nav class="nav">
+         <label class="logo"><a href="#">cyclinglover</a></label>
+            <ul>
+               <li><a  href="#">Home</a></li>
+               <li>
+                  <a href="#">products</a>
+                  <ul>
+                     <li><a href="#">off road cycles</a></li>
+                     <li><a href="#">gear cycles</a></li>
+                     <li><a href="#">bab cycles</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#">pages</a>
+                  <ul>
+                     <li><a href="#">login</a></li>
+                     <li><a href="#">my account</a></li>
+                     <li><a href="#">card</a></li>
+                     <li><a href="#">orders</a></li>
+                     <li><a href="#">services</a></li>
+                     <li><a href="#">reviews</a></li>
+                     <li><a href="#">about</a></li>
+                     <li><a href="#">contact</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">services</a></li>
+               <li><a href="#" class="active">Contact</a></li>
+               <li><a href="#">reviews</a></li>
+               <li><a href="#">help</a></li>
+            </ul>
+         </nav>
+    </div>
+        <div class="img">
+            <img  class="img" src="./contact page image.jpg" alt="">
+        </div>
+        <h1 class="act">MY ACCOUNT
+            <a href="#">Login/Register</a>
+        </h1>
+            <div class="accountpage">
+                <h1>Billing Address</h1>
+                <p>To add a new address, please fill out the form below.</p>
+                <div>
+                <label for="first name">Frist Name:</label><br>
+                <input type="text"></div>
+               <div class="ln"><label  for="last name">Last Name:</label><br>
+                     <input  type="text"></div>
+                <div><label for="email">Email:</label><br>
+                    <input type="email"></div>
+                        <div class="ph"><label  for="phone">Ph Number:</label><br>
+                             <input  type="tel"></div>
+                                <div><label for="country">country:</label><br>
+                                     <input class="input" type="text"></div>
+                                     <div><label for="address">Address:</label><br>
+                                          <input class="input" type="text"></div>
+                                          <div><label for="Additional information">Additional Information:</label><br>
+                                               <input class="input" type="text"></div>
+                                                <div class="button"><button>Save</button></div>
+            </div>
+            <div class="accountpage1">
+                <h1>Your personal information</h1>
+                <p>Please be sure to update your personal information if it has changed</p>
+                <label for="Full Name">Full Name:</label><br>
+                <input type="text"><br>
+                <label for="Email">Email:</label><br>
+                <input type="email"><br>
+                <label for="DOB">Date Of Birth:</label><br>
+                <input type="date"><br>
+                <label for="password">Password</label><br>
+                <input type="password"><br>
+                <label for="Confirm password">Confirm Password</label><br>
+                <input type="password"><br>
+                <button class="button">Save</button>
+            </div>
+<footer class="footer">@copyright 2022-Template Powered By Naveen</footer>
+</body>
+</html>
